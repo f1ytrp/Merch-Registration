@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: "Jaapokki subtract", sans-serif;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header h3{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+
+form {
+    padding-top: 5px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(12, 109, 235) 100%); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 40vw;
+    backdrop-filter: blur(10px);
+}
+
+form h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.input-field, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    outline: none;  
+    transition: 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.input-field:focus, select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    cursor: pointer;
+}
+
+
+.radio-size label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#hostel option {
+    background-color: white;
+    color: black;
+}
+
+.checks {
+    display: flex;
+    align-items: center;
+}
+
+.checks input {
+    margin-right: 10px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+    background: rgb(101, 101, 233);
+    color: rgb(255, 255, 255);  
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: #0b3ef4;
+}
+
+button[type="reset"] {
+    background: #ff6666;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="reset"]:hover {
+    background: red;
+}
+
+.error{
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    visibility: visible;
+    z-index: 10;
+}
+
+.success .error {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    form{
+        width: 80vw;
+    }
+}

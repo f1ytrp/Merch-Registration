@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img class="dvm-logo" src="assets/svg-0.svg">
+        <h3>MERCH SIGNINGS</h3>
+    </div>
+    <form id="formid">
+        <div class="name1">
+            <label for="username">Enter Name:</label>
+            <input type="text" id="username" class="input-field">
+            <div class="error"></div>
+        </div>
+        <br></br>
+        <div class="emailid">
+            <label for="email">Enter BITS Email ID:</label>
+            <input type="text" id="email" class="input-field">
+            <div class="error"></div>
+        </div>
+        <br></br>
+        <div class="number">
+            <label for="number">Enter Phone Number:</label>
+            <input type="text" id="number" class="input-field">
+            <div class="error"></div>
+        </div>
+        <br></br>
+        <div class="bitsid">
+            <label for="bits">Enter BITS ID:</label>
+            <input type="text" id="bits" class="input-field">
+            <div class="error"></div>
+        </div>
+        <br></br>
+
+        <div class="hostels-radio">
+            <span class="select-hostel" for="select-hostel">Select your Hostel: </span>
+            <select name="Hostel" id="hostel">
+                <option class="hostels" value="srb">SR Bhavan</option>
+                <option class="hostels" value="krb">Krishna Bhavan</option>
+                <option class="hostels" value="gnb">Gandhi Bhavan</option>
+                <option class="hostels" value="rmb">Ram Bhavan</option>
+                <option class="hostels" value="bdb">Budh Bhavan</option>
+                <option class="hostels" value="mrb">Meera Bhavan</option>
+                <option class="hostels" value="vyb">Vyas Bhavan</option>
+                <option class="hostels" value="shb">Shankar Bhavan</option>
+                <option class="hostels" value="mlb">Malviya Bhavan</option>
+            </select>
+        </div>
+        <br></br>
+
+        <div class="radio-size">
+            Select Your Size: 
+            <label>
+                <input id="options" type="radio" name="option" value="option1"> M</label>
+            <label>
+            <label>
+                <input id="options" type="radio" name="option" value="option2"> L</label>
+            <label>
+            <label>
+                <input id="options" type="radio" name="option" value="option3"> XL</label>
+            <label>
+            <div class="error"></div>
+        </div>
+        <br></br>
+
+        <div class="checks">
+            <input type="checkbox" id="terms" name="terms"/>
+            <label for="terms">Do You agree to the Terms and Conditions</label>
+            <div class="error"></div>
+        </div>
+        <br></br>
+
+        <button type="submit">Submit the Form</button> 
+        <button id="reset" type="reset">Reset the Form</button> 
+    </form>
+    <script defer src="script.js"></script>
+</body>
+</html>
